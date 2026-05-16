@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero section */
+.tutorial2-hero{
+  position: relative;
+  min-height: 80vh;
+  height: auto;
+  width: 100%;
+
+  background-image: url("images/tutorial2page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay */
+.tutorial2-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+
+/* Hero text */
+.tutorial2-hero-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+  color:white;
+  z-index:2;
+}
+
+.tutorial2-hero-text h1{
+  font-family:'Allura', cursive;
+  font-size:75px;
+  margin-bottom:10px;
+}
+
+.tutorial2-hero-text p{
+  font-size:22px;
+}
+
+/* Main container */
+.tutorial2-container{
+  max-width:1000px;
+  margin:40px auto;
+  padding:20px;
+}
+
+.tutorial2-container h2{
+  text-align:center;
+  font-size:50px;
+  color:#ff4d88;
+  font-family:'Allura', cursive;
+}
+
+/* Meta */
+.meta{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin:15px 0;
+  color:#777;
+}
+
+/* Intro */
+.intro{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:17px;
+}
+
+/* Steps grid */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:25px;
+}
+
+/* Step cards */
+.step-box{
+  background:white;
+  border-radius:20px;
+  padding:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.step-box:hover{
+  transform:translateY(-8px);
+}
+
+/* Step number */
+.step-number{
+  width:40px;
+  height:40px;
+  background:#ff4d88;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+/* Step image */
+.step-img{
+  width:100%;
+  height:300px;
+  object-fit:contain;
+  border-radius:15px;
+}
+
+/* TEXT */
+.step-text{
+  margin-top:15px;
+}
+
+.step-text h3{
+  color:#ff4d88;
+  margin-bottom:8px;
+  font-size: 20px;
+}
+
+.step-text p{
+  font-size: 16px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BACK button */
+.back-btn{
+  display: block;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+/* Mobile responsive */
+
+@media(max-width:768px){
+
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .tutorial2-hero-text h1{
+    font-size:55px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .tutorial2-hero {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .tutoria2-hero-text {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+
+  .tutorial2-container {
+    grid-template-columns: 1fr;
+  }
+}

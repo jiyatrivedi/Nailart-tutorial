@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #fff5f8;
+}
+
+/* BACK button */
+.back-btn{
+  display: block;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+.btn{
+  padding: 12px 25px;
+  background: #ff4d88;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* Hero section */
+.tutorial3-hero{
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  height:auto;
+  margin-bottom: 60px;
+  background:
+  linear-gradient(rgba(255,255,255,0.15),
+  rgba(255,255,255,0.15)),
+  url("images/tutorial3page.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 90px;
+  overflow: visible;
+}
+
+.tutorial3-hero-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.tutorial3-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.tutorial3-hero-text h1{
+  font-family:'Allura', cursive;
+  font-size: 75px;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.tutorial3-hero-text p{
+  font-size: 22px;
+}
+
+/* Step section */
+.steps{
+  width: 90%;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 40px;
+}
+
+/*Main container */
+.tutorial3-container h2{
+  text-align:center;
+  font-size:50px;
+  color:#ff4d88;
+  font-family:'Allura', cursive;
+}
+
+/* Meta */
+.meta{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin:15px 0;
+  color:#777;
+}
+
+/* Intro */
+.intro{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:17px;
+}
+
+/* Steps Cards */
+.step-card{
+  background: white;
+  border-radius: 25px;
+  overflow: visible;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.step-card:hover{
+  transform: translateY(-8px);
+}
+
+/* Step number */
+.step-number{
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: #ff4d88;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* Step image */
+.step-card img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Text */
+.step-card h3{
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ff4d88;
+  padding: 20px 20px 10px;
+}
+
+.step-card p{
+  padding: 0 20px 30px;
+  font-size: 16px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+}
+
+/* Mobile responsive */
+
+@media(max-width:768px){
+
+  .tutorial3-hero{
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tutorial3-hero-text h1{
+    font-size: 45px;
+  }
+
+  .tutorial3-hero-text p{
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .tutorial3-hero {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .tutorial3-hero-text {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+
+  .tutorial3-container {
+    grid-template-columns: 1fr;
+  }
+}
